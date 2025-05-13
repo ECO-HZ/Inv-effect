@@ -17,8 +17,7 @@ All data will be made available upon acceptance of the manuscript.
     * 4. Greenhouse_ASVs_row_data.xlsx  
     * 5. Greenhouse_data_group.xlsx  
     * 6. Greenhouse_fungi_Flattening.xlsx  
-    * 7. Figure_S5.xlsx  
-    * 8. Table_S6.xlsx
+    * 7. FungalTraits.xlsx  
     
 *List of phylogenetic tree data files (.newick)*  
 

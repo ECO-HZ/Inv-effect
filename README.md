@@ -40,8 +40,8 @@ The names of R-scripts correspond to the statistical analysis and visualization 
     * Longitude	 Longitude of sampling point
     * Year	         Sampling year
     * Site	         Name of sampling site
-    * 物种名	  Chinese name of study species
-    * Species  Latin name of study species
+    * 物种名	   Chinese name of study species
+    * Species       Latin name of study species
     * Genus	         Genus name of research species
     * Family	 Family name of research species
     * Origin	 Geographical origin of plants (native vs. exotic)

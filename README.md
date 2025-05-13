@@ -16,7 +16,9 @@ All data will be made available upon acceptance of the manuscript.
     * 7. Figure_S5.xlsx  * 8. Table_S6.xlsx
     
 *List of phylogenetic tree data files (.newick)*  
-    * 1. Field_tree.nwk  * 2. Greenhouse_tree.nwk  * 3. IQ_tree_plant_2025.newick
+    * 1. Field_tree.nwk  (ASVs for field survey)
+    * 2. Greenhouse_tree.nwk  (ASVs for greenhouse experiment)
+    * 3. IQ_tree_plant_2025.newick  (Phylogenetic tree of studying plant species)
 
 ***In Code folder***
 
@@ -55,8 +57,8 @@ The names of R-scripts correspond to the statistical analysis and visualization 
     * SLA	 Specific leaf area (cm2 g-1)
     * LDMC	 Leaf dry matter content (g g-1)
     * SRL	 Specific root length (cm2 g-1)
-    * FRR	 Fine-to-total root mass (g g-1)
-    * RMF	 Root mass fraction (g g-1)
+    * FRR	       Fine-to-total root mass (g g-1)
+    * RMF	       Root mass fraction (g g-1)
     * Funct_pPC1	 The first PCA axes of plant traits
     * Funct_pPC2	 The second PCA axes of plant traits
     * Funct_pPC3	 The third PCA axes of plant traits

@@ -33,12 +33,16 @@ The names of R-scripts correspond to the statistical analysis and visualization 
 *List of R-scripts*
 
     * 1. mian_Figure_1.R  
-    * 2.mian_Figure_2.R  
+    * 2. mian_Figure_2.R  
     * 3. mian_Figure_3 & Table_S9.R  
     * 4. mian_Figure_4 & Figure_S2 & Table_S7.R  
-    * 5. Table_S4 & Table_S8.R  
-    * 6. Table_S5 & Table_S6.R  
-    * 7. stepAICc.R (function for model selection)
+    * 5. Figure_S1.R  
+    * 6. Figure_S3 (Draw in ppt)
+    * 7. Figure_S4.R  
+    * 8. Figure_S5.R  
+    * 9. Table_S4 & Table_S8.R  
+    * 10. Table_S5 & Table_S6.R  
+    * 11. stepAICc.R (function for model selection)
     
 **Data-specific onformation for:** ***Field_ASVs_row_data.xlsx***
 

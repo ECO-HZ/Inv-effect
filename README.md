@@ -16,6 +16,7 @@ All data will be made available upon acceptance of the manuscript.
     * 7. Figure_S5.xlsx  * 8. Table_S6.xlsx
     
 *List of phylogenetic tree data files (.newick)*  
+
     * 1. Field_tree.nwk  (ASVs for field survey)
     * 2. Greenhouse_tree.nwk  (ASVs for greenhouse experiment)
     * 3. IQ_tree_plant_2025.newick  (Phylogenetic tree of studying plant species)

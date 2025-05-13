@@ -51,8 +51,8 @@ The names of R-scripts correspond to the statistical analysis and visualization 
     * Soil_N	      Soil total nitrogen content
     * Tave	         Mean annual temperature (℃)
     * Prec	         Mean annual precipitation (mm)
-    * CV_Tave	    Coefficient of variation of mean annual temperature
-    * CV_Prec	    Coefficient of variation of mean annual precipitation
+    * CV_Tave	 Coefficient of variation of mean annual temperature
+    * CV_Prec	 Coefficient of variation of mean annual precipitation
     * Chol	         Leaf chlorophyll
     * SLA	         Specific leaf area (cm2 g-1)
     * LDMC	         Leaf dry matter content (g g-1)

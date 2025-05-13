@@ -9,209 +9,95 @@ Before the manuscript is officially published, experimental and analytical data 
 If needed, please contact the first or corresponding author in advance to obtain the relevant experimental data. 
 All data will be made available upon acceptance of the manuscript.
 
-*List of experimental data files*
+*List of experimental data files (.xlsx)*
 
-    * 1. Figure_1.xlsx  * 2. Figure_2&Table_S4&Table_S5&Table_AP_def&Her_rich&path.xlsx  * 3. Figure_3.xlsx
-    * 4. Figure_4.xlsx  * 5. Figure_S2.xlsx  *6. Figure_S4.xlsx  * 7. Figure_S5.xlsx  * 8. Table_S6.xlsx
+    * 1. Field_ASVs_row_data.xlsx  * 2. Field_data_group.xlsx  * 3. Field_fungi_Flattening.xlsx
+    * 4. Greenhouse_ASVs_row_data.xlsx  * 5. Greenhouse_data_group.xlsx  *6. Greenhouse_fungi_Flattening.xlsx  
+    * 7. Figure_S5.xlsx  * 8. Table_S6.xlsx
+    
+*List of phylogenetic tree data files (.newick)*  
+    * 1. Field_tree.nwk  * 2. Greenhouse_tree.nwk  * 3. IQ_tree_plant_2025.newick
 
 ***In Code folder***
 
-The names of R-scripts correspond to the statistical analysis and visualization of the corresponding figures in this manuscript.
+The names of R-scripts correspond to the statistical analysis and visualization of the corresponding figures or tables in this manuscript.
 
 *List of R-scripts*
 
-    * 1. Figure_1.R  * 2. Figure_2.R  * 3. Figure_3.R  * 4. Figure_4.R  * 5. Figure_S2.R  * 6. Figure_S4.xlsx  
-    * 7. Figure_S5.R  * 8. Table_S4.R  * 9. Table_S5.R  * 10. Table_S6.R  * 11. Table_S7.R 
+    * 1. mian_Figure_1.R  * 2.mian_Figure_2.R  * 3. mian_Figure_3 & Table_S9.R  * 4. mian_Figure_4 & Figure_S2 & Table_S7.R  
+    * 5. Table_S4 & Table_S8.R  * 6. Table_S5 & Table_S6.R  * 7. stepAICc.R (function for model selection)
     
-**Data-specific onformation for:** ***Figure_1.xlsx***
+**Data-specific onformation for:** ***Field_ASVs_row_data.xlsx***
+    * Abundance table of raw sequencing data of rhizosphere fungi from field survey (not rarefied to minimum sample size)
 
-Variable list:
-    
-    * Site: Code of site in field survey
-    * Type: Habitat type (natural vs. farmland)
-    * Year:	Year of measurement
-    * Invaded_time: First invasion year
-    * Longitude: Longitude of sampling plot
-    * Latitude: Latitude of sampling plot
-    * Ann_M_Tem: Annual mean temperature (℃)
-    * Ann_Pre: Annual percipitaiton (mm)
-    * All_exotic_rich: Richness of all exotic (include *A. philoxeroides*) plants
-    * Other_exotic_rich: Richness of other exotic plants
-    * Native_rich: Native plant richness
-    * Herb_rich: Insect herbivore richness
-    * AP_re_abun: Relative abundance of *A. philoxeroides*
-    * All_exotic_re_abun: Relative abundance of all exotic (include *A. philoxeroides*) plants
-    * Other_exotic_re_abun: Relative abundance of other exotic plants
-    * Path_re_abun: Relative abundance of soil fungal pathogens
-    * Defoliation: Leaf area removed of *A. philoxeroides*
+**Data-specific onformation for:** ***Field_data_group.xlsx***
 
-**Data-specific onformation for:** ***Figure_2&Table_S4&Table_S5&Table_AP_def&Her_rich&path.xlsx***
-
-Variable list:
-    
-    * Site: Code of site in field survey
-    * Type: Habitat type (natural vs. farmland)
-    * Year:	Year of measurement
-    * Invaded_time: First invasion year
-    * Longitude: Longitude of sampling plot
-    * Latitude: Latitude of sampling plot
-    * Ann_M_Tem: Annual mean temperature (℃)
-    * Ann_Pre: Annual percipitaiton (mm)
-    * All_exotic_rich: Richness of all exotic (include *A. philoxeroides*) plants
-    * Other_exotic_rich: Richness of other exotic plants
-    * Native_rich: Native plant richness
-    * Herb_rich: Insect herbivore richness
-    * AP_re_abun: Relative abundance of *A. philoxeroides*
-    * All_exotic_re_abun: Relative abundance of all exotic (include *A. philoxeroides*) plants
-    * Other_exotic_re_abun: Relative abundance of other exotic plants
-    * Path_re_abun: Relative abundance of soil fungal pathogens
-    * Defoliation: Leaf area removed of *A. philoxeroides*
-    
-**Data-specific onformation for:** ***Figure_3.xlsx (This file contains 4 sheets)***
-
-    Sheets: Figure_3a - Relative abundance of *A. philoxeroides* in field experiment. 
     Variable list:
-    * plot: Code of plot in field experiment
-    * Time: Sampling time of field experiment (categorical variable)
-    * Richness: Plant richness of native species (number of species added)
-    * AP_re_abun: Relative abundance of *A. philoxeroides*
+    * Sample_ID	 Sample id of  plant rhizosphere soil 
+    * Latitude	 Latitude of sampling point
+    * Longitude	 Longitude of sampling point
+    * Year	 Sampling year
+    * Site	 Name of sampling site
+    * 物种名	 Chinese name of study species
+    * Species	 Latin name of study species
+    * Genus	 Genus name of research species
+    * Family	 Family name of research species
+    * Origin	 Geographical origin of plants (native vs. exotic)
+    * Site_pool	 The total richness of fungi for each site and year
+    * Soil_ph	 Soil pH
+    * Wcont	 Soil water content
+    * Soil_N	 Soil total nitrogen content
+    * Tave	 Mean annual temperature (℃)
+    * Prec	 Mean annual precipitation (mm)
+    * CV_Tave	 Coefficient of variation of mean annual temperature
+    * CV_Prec	 Coefficient of variation of mean annual precipitation
+    * Chol	 Leaf chlorophyll
+    * SLA	 Specific leaf area (cm2 g-1)
+    * LDMC	 Leaf dry matter content (g g-1)
+    * SRL	 Specific root length (cm2 g-1)
+    * FRR	 Fine-to-total root mass (g g-1)
+    * RMF	 Root mass fraction (g g-1)
+    * Funct_pPC1	 The first PCA axes of plant traits
+    * Funct_pPC2	 The second PCA axes of plant traits
+    * Funct_pPC3	 The third PCA axes of plant traits
+    * Phylo_vPC1	 The first PCA axes of plant phylogeny
+    * Phylo_vPC2	 The second PCA axes of plant phylogeny
 
-    Sheets: Figure_3b - Aboveground biomass of *A. philoxeroides* in field experiment.
-    Variable list:
-    * plot: Code of plot in field experiment
-    * Time: Sampling time of field experiment (categorical variable)
-    * Richness: Plant richness of native species (number of species added)
-    * AP_biomass: Aboveground biomass of *A. philoxeroides* (g)
+**Data-specific onformation for:** ***Field_fungi_Flattening.xlsx***
 
-    Sheets: Figure_3c - Relative abundance of *A. philoxeroides* in mesocosm experiment.
-    Variable list:
-    * plot: Code of plot in  mesocosm experiment
-    * Time: Sampling time of mesocosm experiment (categorical variable)
-    * Richness: Plant richness of native species (number of species added)
-    * AP_re_abun: Relative abundance of *A. philoxeroides*
-
-    Sheets: Figure_3d - Aboveground biomass of *A. philoxeroides* in mesocosm experiment.
-    Variable List:
-    * plot: Code of plot in mesocosm experiment
-    * Time: Sampling time of  mesocosm experiment (categorical variable)
-    * Richness: Plant richness of native species (number of species added)
-    * AP_biomass: Aboveground biomass of *A. philoxeroides* (g)
+    * Abundance table of raw sequencing data of rhizosphere fungi from field survey (rarefied to minimum sample size)
       
-**Data-specific onformation for:** ***Figure_4.xlsx (This file contains 4 sheets)***
+**Data-specific onformation for:** ***Greenhouse_ASVs_row_data.xlsx***
+    * Abundance table of raw sequencing data of rhizosphere fungi from greenhouse experiment (not rarefied to minimum sample size)
 
-    Sheets: Figure_4a - Relationship between the foliar defoliation both the native plants and invader, and native plant richness from 2021 to 2023 in field experiment
-    Variable list:
-    * plot: Code of plot in field experiment
-    * Time: Sampling time of field experiment (categorical variable)
-    * Origin: Geographical origin of experimental species
-    * Richness: Plant richness of native species (number of species added)
-    * Defoliation: % leaf area removed
+**Data-specific onformation for:** ***Greenhouse_data_group.xlsx***
 
-    Sheets: Figure_4b - Relationships between soil effects both native plants and invader (March 2023), and native plant richness in field experiment
-    Variable list:
-    * plot: Code of plot in field experiment
-    * Origin: Geographical origin of experimental species
-    * Richness: Plant richness of native species (number of species added)
-    * Soil_effect: Soil effect om total biomass [ln(non-sterilized/sterilized)]
+    Variable list	 Description
+    * Sample_ID	 Sample id of  plant rhizosphere soil 
+    * Chinese_name	 Chinese name of study species
+    * Species	 Latin name of study species
+    * Genus	 Genus name of research species
+    * Family	 Family name of research species
+    * Repeats	 Repeat number of soil samples
+    * Origin	 Geographical origin of plants (native vs. exotic)
+    * Hmax	 Plant height (cm)
+    * Chol	 Leaf chlorophyll
+    * LA	 Individual leaf area (cm2)
+    * SLA	 Specific leaf area (cm2 g-1)
+    * LDMC	 Leaf dry matter content (g g-1)
+    * SRL	 Specific root length (cm2 g-1)
+    * FRR	 Fine-to-total root mass (g g-1)
+    * RMF	 Root mass fraction (g g-1)
+    * Funct_pPC1	 The first PCA axes of plant traits
+    * Funct_pPC2	 The second PCA axes of plant traits
+    * Funct_pPC3	 The third PCA axes of plant traits
+    * Phylo_vPC1	 The first PCA axes of plant phylogeny
+    * Phylo_vPC2	 The second PCA axes of plant phylogeny
 
-    Sheets: Figure_4c - Relationships between soil effects of *A. philoxeroides* and Relative abundance of A. philoxeroides in field experiment
-    Variable list:
-    * plot: Code of plot in field experiment
-    * Origin: Geographical origin of experimental species
-    * Richness: Plant richness of native species (number of species added)
-    * Soil_effect: Soil effect om total biomass [ln(non-sterilized/sterilized)]
-    * AP_re_abun:  Relative abundance of *A. philoxeroides* in field experiment
+**Data-specific onformation for:** ***Greenhouse_fungi_Flattening.xlsx***
 
-    Sheets: Figure_4d - Relationships between Aboveground biomass of native plants (2021-2023) and native plant richness in field experiment
-    Variable list:
-    * plot: Code of plot in field experiment
-    * Time: Sampling time of field experiment
-    * Richness: Plant richness of native species (number of species added)
-    * Native_biomass: Aboveground biomass of native species (g)
-
-**Data-specific onformation for:** ***Figure_S2.xlsx (This file contains 2 sheets)***
-
-    Sheets: Plant_community_composition - Native plant community composition in field and mesocosm experiment
-    Variable list:
-    * Columns 1-18: Latin name of the 18 native species 
-    * Native_richness: 5 native species richness level
-    * plot: Code of plot in field and mesocosm experiment
-
-    Sheets: Frequency - Frequency of occurrence of experimental species
-    Variable list:
-    * Group: Eight grass species and ten forb species
-    * Species: Latin name of the 18 native species 
-    * Fre_2_Native_rich: Frequencies of native plant richnes = 2 
-    * Fre_4_Native_rich: Frequencies of native plant richnes = 4
-    * Fre_6_Native_rich: Frequencies of native plant richnes = 6
-    * Fre_8_Native_rich: Frequencies of native plant richnes = 8 
-    * Fre_12_Native_rich: Frequencies of native plant richnes = 12
-
-**Data-specific onformation for:** ***Figure_S4.xlsx (This file contains 2 sheets)***
-
-    Sheets: Field_Defoliation - The dependence of defoliation on native richness in the field experiment in three years
-    Variable list:
-    * plot: Code of plot in field experiment
-    * Time: Sampling time of field experiment (categorical Variable)
-    * Origin: Geographical origin of experimental species
-    * Richness: Plant richness of native species (number of species added)
-    * Defoliation: % leaf area removed
-
-    Sheets: Field_Herbivore - The dependence of insect herbivore richness and insect herbivore abundance on native richness in the field experiment in three years
-    Variable list:
-    * plot: Code of plot in field experiment
-    * Time: Sampling time of field experiment (categorical Variable)
-    * Richness: Plant richness of native species (number of species added)
-    * Herbivore_richness: Richenss of Herbivores in field experiment
-    * Herbivore_abundance: Abundance of Herbivores in field experiment            
-
-**Data-specific onformation for:** ***Figure_S5.xlsx***
-
-    Variable List:
-    * plot: Code of plot in field experiment
-    * Time: Sampling time of field experiment (categorical Variable)
-    * Richness: Plant richness of native species (number of species added)
-    * Native_biomass: Aboveground biomass of native species (g)
-      
-**Data-specific onformation for:** ***Table_S6.xlsx (This file contains 5 sheets)****
-
-    Sheets: Field_AP_re_abun - Relative abundance of *A. philoxeroides* in field experiment
-    Variable list:
-    * plot: Code of plot in field experiment
-    * Time: Sampling time of field experiment (categorical variable)
-    * Richness: Plant richness of native species (number of species added)
-    * AP_re_abun: Relative abundance of *A. philoxeroides*
-
-    Sheets: Field_biomass - Aboveground biomass of *A. philoxeroides* in field experiment
-    Variable list:
-    * plot: Code of plot in field experiment
-    * Time: Sampling time of field experiment (categorical variable)
-    * Richness: Plant richness of native species (number of species added)
-    * AP_biomass:  Aboveground biomass of *A. philoxeroides* (g)
-    * Native_biomass:  Aboveground biomass of native species (g)
-
-    Sheets: Mesocosm_AP_re_abun - Relative abundance of *A. philoxeroides* in mesocosm experiment
-    Variable list:
-    * plot: Code of plot in mesocosm experiment
-    * Time: Sampling time of mesocosm experiment (categorical variable)
-    * Richness: Plant richness of native species (number of species added)
-    * AP_re_abun: Relative abundance of *A. philoxeroides*
-
-    Sheets: Mesocosm_AP_biomass - Aboveground biomass of *A. philoxeroides* in mesocosm experiment
-    Variable list:
-    * plot: Code of plot in mesocosm experiment
-    * Time: Sampling time of mesocosm experiment (categorical variable)
-    * Richness: Plant richness of native species (number of species added)
-    * AP_biomass: Aboveground biomass of *A. philoxeroides* (g)
-
-    Sheets: Mesocosm_native_biomass - Aboveground biomass of native species in mesocosm experiment
-    Variable list:
-    * plot: Code of plot in mesocosm experiment
-    * Time: Sampling time of mesocosm experiment (categorical variable)
-    * Richness: Plant richness of native species (number of species added)
-    * Native_biomass: Aboveground biomass of native species (g)
+    * Abundance table of raw sequencing data of rhizosphere fungi from greenhouse experiment (rarefied to minimum sample size)
     
-**Data-specific onformation for:** ***Json file for drawing maps***
+**Data-specific onformation for:** ***FungalTraits.xlsx***
 
-    * China_map.json
-    * custom.geo.json
+    * The FungalTraits database (Põlme et al. 2021)

@@ -57,8 +57,8 @@ The names of R-scripts correspond to the statistical analysis and visualization 
     * SLA	 Specific leaf area (cm2 g-1)
     * LDMC	 Leaf dry matter content (g g-1)
     * SRL	 Specific root length (cm2 g-1)
-    * FRR	       Fine-to-total root mass (g g-1)
-    * RMF	       Root mass fraction (g g-1)
+    * FRR	         Fine-to-total root mass (g g-1)
+    * RMF	         Root mass fraction (g g-1)
     * Funct_pPC1	 The first PCA axes of plant traits
     * Funct_pPC2	 The second PCA axes of plant traits
     * Funct_pPC3	 The third PCA axes of plant traits

@@ -78,18 +78,18 @@ The names of R-scripts correspond to the statistical analysis and visualization 
     * Sample_ID	 Sample id of  plant rhizosphere soil 
     * Chinese_name	 Chinese name of study species
     * Species	 Latin name of study species
-    * Genus	 Genus name of research species
+    * Genus	         Genus name of research species
     * Family	 Family name of research species
     * Repeats	 Repeat number of soil samples
     * Origin	 Geographical origin of plants (native vs. exotic)
-    * Hmax	 Plant height (cm)
-    * Chol	 Leaf chlorophyll
-    * LA	 Individual leaf area (cm2)
-    * SLA	 Specific leaf area (cm2 g-1)
-    * LDMC	 Leaf dry matter content (g g-1)
-    * SRL	 Specific root length (cm2 g-1)
-    * FRR	 Fine-to-total root mass (g g-1)
-    * RMF	 Root mass fraction (g g-1)
+    * Hmax	         Plant height (cm)
+    * Chol	         Leaf chlorophyll
+    * LA	         Individual leaf area (cm2)
+    * SLA	         Specific leaf area (cm2 g-1)
+    * LDMC	         Leaf dry matter content (g g-1)
+    * SRL	         Specific root length (cm2 g-1)
+    * FRR	         Fine-to-total root mass (g g-1)
+    * RMF	         Root mass fraction (g g-1)
     * Funct_pPC1	 The first PCA axes of plant traits
     * Funct_pPC2	 The second PCA axes of plant traits
     * Funct_pPC3	 The third PCA axes of plant traits

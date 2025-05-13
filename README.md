@@ -100,4 +100,4 @@ The names of R-scripts correspond to the statistical analysis and visualization 
     
 **Data-specific onformation for:** ***FungalTraits.xlsx***
 
-    * The FungalTraits database (Põlme et al. 2021)
+    * The FungalTraits database (Põlme, S., Abarenkov, K., Henrik Nilsson, R., Lindahl, B.D., Clemmensen, K.E., Kauserud, H., et al. 2021. "FungalTraits: a user-friendly traits database of fungi and fungus-like stramenopiles." Fungal Diversity 105: 1-16.)

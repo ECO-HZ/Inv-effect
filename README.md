@@ -11,9 +11,14 @@ All data will be made available upon acceptance of the manuscript.
 
 *List of experimental data files (.xlsx)*
 
-    * 1. Field_ASVs_row_data.xlsx  * 2. Field_data_group.xlsx  * 3. Field_fungi_Flattening.xlsx
-    * 4. Greenhouse_ASVs_row_data.xlsx  * 5. Greenhouse_data_group.xlsx  *6. Greenhouse_fungi_Flattening.xlsx  
-    * 7. Figure_S5.xlsx  * 8. Table_S6.xlsx
+    * 1. Field_ASVs_row_data.xlsx  
+    * 2. Field_data_group.xlsx  
+    * 3. Field_fungi_Flattening.xlsx
+    * 4. Greenhouse_ASVs_row_data.xlsx  
+    * 5. Greenhouse_data_group.xlsx  
+    * 6. Greenhouse_fungi_Flattening.xlsx  
+    * 7. Figure_S5.xlsx  
+    * 8. Table_S6.xlsx
     
 *List of phylogenetic tree data files (.newick)*  
 
@@ -27,15 +32,21 @@ The names of R-scripts correspond to the statistical analysis and visualization 
 
 *List of R-scripts*
 
-    * 1. mian_Figure_1.R  * 2.mian_Figure_2.R  * 3. mian_Figure_3 & Table_S9.R  * 4. mian_Figure_4 & Figure_S2 & Table_S7.R  
-    * 5. Table_S4 & Table_S8.R  * 6. Table_S5 & Table_S6.R  * 7. stepAICc.R (function for model selection)
+    * 1. mian_Figure_1.R  
+    * 2.mian_Figure_2.R  
+    * 3. mian_Figure_3 & Table_S9.R  
+    * 4. mian_Figure_4 & Figure_S2 & Table_S7.R  
+    * 5. Table_S4 & Table_S8.R  
+    * 6. Table_S5 & Table_S6.R  
+    * 7. stepAICc.R (function for model selection)
     
 **Data-specific onformation for:** ***Field_ASVs_row_data.xlsx***
+
     * Abundance table of raw sequencing data of rhizosphere fungi from field survey (not rarefied to minimum sample size)
 
 **Data-specific onformation for:** ***Field_data_group.xlsx***
 
-    Variable list:
+    Variable list	 Description
     * Sample_ID	 Sample id of  plant rhizosphere soil 
     * Latitude	 Latitude of sampling point
     * Longitude	 Longitude of sampling point
@@ -71,6 +82,7 @@ The names of R-scripts correspond to the statistical analysis and visualization 
     * Abundance table of raw sequencing data of rhizosphere fungi from field survey (rarefied to minimum sample size)
       
 **Data-specific onformation for:** ***Greenhouse_ASVs_row_data.xlsx***
+
     * Abundance table of raw sequencing data of rhizosphere fungi from greenhouse experiment (not rarefied to minimum sample size)
 
 **Data-specific onformation for:** ***Greenhouse_data_group.xlsx***

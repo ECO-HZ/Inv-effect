@@ -64,8 +64,8 @@ The names of R-scripts correspond to the statistical analysis and visualization 
     * Soil_ph	 Soil pH
     * Wcont	         Soil water content
     * Soil_N	 Soil total nitrogen content
-    * Tave	         Mean annual temperature (℃)
-    * Prec	         Mean annual precipitation (mm)
+    * Tave	         Annual average temperature (℃)
+    * Prec	     Annual precipitation (mm)
     * CV_Tave	 Coefficient of variation of mean annual temperature
     * CV_Prec	 Coefficient of variation of mean annual precipitation
     * Chol	         Leaf chlorophyll

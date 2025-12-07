@@ -29,17 +29,18 @@ The names of R-scripts correspond to the statistical analysis and visualization 
 
 *List of R-scripts*
 
-    * 1. mian_Figure_1.R  
-    * 2. mian_Figure_2.R  
-    * 3. mian_Figure_3 & Table_S9.R  
-    * 4. mian_Figure_4 & Figure_S2 & Table_S7.R  
-    * 5. Figure_S1.R  
-    * 6. Figure_S3 (Draw in ppt)
-    * 7. Figure_S4.R  
-    * 8. Figure_S5.R  
-    * 9. Table_S4 & Table_S8.R  
-    * 10. Table_S5 & Table_S6.R  
-    * 11. stepAICc.R (function for model selection)
+    * 1. Figure 1.tiff (Draw in ppt)
+    * 2. Figure 2 & S2a & S2c.R  
+    * 3. Figure 3a & 3c.R  
+    * 4. Figure 3b & 3d.R  
+    * 5. Figure 4.R  
+    * 6. Figure S1.R
+    * 7. Figure S2b & S2d.R  
+    * 8. Figure S3
+    * 9. Figure S4.R  
+    * 10. Table S2 & Table S3 (field survey part).R  
+    * 11. Table S2 & Table S3 (greenhouse exp. part).R  
+    * 12. Table S4.R
     
 **Data-specific onformation for:** ***Field_ASVs_row_data.xlsx***
 
@@ -48,40 +49,47 @@ The names of R-scripts correspond to the statistical analysis and visualization 
 **Data-specific onformation for:** ***Field_data_group.xlsx***
 
     Variable list	 Description
-    * Sample_ID	 Sample id of  plant rhizosphere soil 
-    * Latitude	 Latitude of sampling point
-    * Longitude	 Longitude of sampling point
-    * Year	         Sampling year
-    * Site	         Name of sampling site
-    * Chinese_name	 Chinese name of study species
-    * Species        Latin name of study species
-    * Genus	         Genus name of research species
-    * Family	 Family name of research species
-    * Origin	 Geographical origin of plants (native vs. exotic)
-    * Site_pool	 The total richness of fungi for each site and year
-    * Soil_ph	 Soil pH
-    * Wcont	         Soil water content
-    * Soil_N	 Soil total nitrogen content
-    * Tave	         Annual average temperature (℃)
-    * Prec	         Annual precipitation (mm)
-    * CV_Tave	 Coefficient of variation of mean annual temperature
-    * CV_Prec	 Coefficient of variation of mean annual precipitation
-    * Chol	         Leaf chlorophyll
-    * SLA	         Specific leaf area (cm2 g-1)
-    * LDMC	         Leaf dry matter content (g g-1)
-    * SRL	         Specific root length (cm2 g-1)
-    * FRR	         Fine-to-total root mass (g g-1)
-    * RMF	         Root mass fraction (g g-1)
-    * Funct_pPC1	 The first PCA axes of plant traits
-    * Funct_pPC2	 The second PCA axes of plant traits
-    * Funct_pPC3	 The third PCA axes of plant traits
-    * Phylo_vPC1	 The first PCA axes of plant phylogeny
-    * Phylo_vPC2	 The second PCA axes of plant phylogeny
+    * Sample_ID: Sample id of  plant rhizosphere soil 
+    * Latitude: Latitude of sampling point
+    * Longitude: Longitude of sampling point
+    * Year: Sampling year
+    * Site: Name of sampling site
+    * Chinese_name: Chinese name of study species
+    * Species: Latin name of study species
+    * Genus: Genus name of research species
+    * Family: Family name of research species
+    * Origin: Geographical origin of plants (native vs. exotic)
+    * Soil_ph: Soil pH
+    * Wcont: Soil water content
+    * Soil_N: Soil total nitrogen content
+    * Tave: Annual average temperature (℃)
+    * Prec: Annual precipitation (mm)
+    * Chol: Leaf chlorophyll
+    * SLA: Specific leaf area (cm2 g-1)
+    * LDMC: Leaf dry matter content (g g-1)
+    * SRL: Specific root length (cm2 g-1)
+    * FRR: Fine-to-total root mass (g g-1)
+    * RMF: Root mass fraction (g g-1)
+    * Rela_generalist: Relative abundance of generalist taxa
+    * Rela_specialist: Relative abundance of specialist taxa
+    * Site_pool: Total number of ASV per site per year
+    * Field_SR: Fungal richness per soil samples
+    
+**Data-specific onformation for:** ***cohesion_data.xlsx***
+    
+    Variable list	 Description
+    * Sample_ID: Sample id of  plant rhizosphere soil 
+    * cohesion.pos: positive cohesion of rhizosphere fungal community networks
+    * cohesion.neg: negative cohesion of rhizosphere fungal community networks
+    
+**Data-specific onformation for:** ***FungalTraits.xlsx***
 
-**Data-specific onformation for:** ***Field_fungi_Flattening.xlsx***
+    * The FungalTraits database (Põlme, S., Abarenkov, K., Henrik Nilsson, R., Lindahl, B.D., Clemmensen, K.E., Kauserud, H., et al. 2021. "FungalTraits: a user-friendly traits database of fungi and fungus-like stramenopiles." Fungal Diversity 105: 1-16.)
 
-    * Abundance table of raw sequencing data of rhizosphere fungi from field survey (rarefied to minimum sample size)
-      
+**Data-specific onformation for:** ***ASV_tax_information.xlsx***
+
+    * Taxonomic information of fungal ASVs in rhizosphere samples during field investigation.
+  
 **Data-specific onformation for:** ***Greenhouse_ASVs_row_data.xlsx***
 
     * Abundance table of raw sequencing data of rhizosphere fungi from greenhouse experiment (not rarefied to minimum sample size)
@@ -104,16 +112,3 @@ The names of R-scripts correspond to the statistical analysis and visualization 
     * SRL	         Specific root length (cm2 g-1)
     * FRR	         Fine-to-total root mass (g g-1)
     * RMF	         Root mass fraction (g g-1)
-    * Funct_pPC1	 The first PCA axes of plant traits
-    * Funct_pPC2	 The second PCA axes of plant traits
-    * Funct_pPC3	 The third PCA axes of plant traits
-    * Phylo_vPC1	 The first PCA axes of plant phylogeny
-    * Phylo_vPC2	 The second PCA axes of plant phylogeny
-
-**Data-specific onformation for:** ***Greenhouse_fungi_Flattening.xlsx***
-
-    * Abundance table of raw sequencing data of rhizosphere fungi from greenhouse experiment (rarefied to minimum sample size)
-    
-**Data-specific onformation for:** ***FungalTraits.xlsx***
-
-    * The FungalTraits database (Põlme, S., Abarenkov, K., Henrik Nilsson, R., Lindahl, B.D., Clemmensen, K.E., Kauserud, H., et al. 2021. "FungalTraits: a user-friendly traits database of fungi and fungus-like stramenopiles." Fungal Diversity 105: 1-16.)

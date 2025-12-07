@@ -11,19 +11,17 @@ All data will be made available upon acceptance of the manuscript.
 
 *List of experimental data files (.xlsx)*
 
-    * 1. Field_ASVs_row_data.xlsx  
+    * 1. Field_ASVs_raw_data.xlsx  
     * 2. Field_data_group.xlsx  
-    * 3. Field_fungi_Flattening.xlsx
-    * 4. Greenhouse_ASVs_row_data.xlsx  
-    * 5. Greenhouse_data_group.xlsx  
-    * 6. Greenhouse_fungi_Flattening.xlsx  
+    * 3. ASV_tax_information.xlsx (field survey)
+    * 4. cohesion_data.xlsx
+    * 5. Greenhouse_ASVs_row_data.xlsx  
+    * 6. Greenhouse_data_group.xlsx  
     * 7. FungalTraits.xlsx  
     
 *List of phylogenetic tree data files (.newick)*  
 
-    * 1. Field_tree.nwk  (ASVs for field survey)
-    * 2. Greenhouse_tree.nwk  (ASVs for greenhouse experiment)
-    * 3. IQ_tree_plant_2025.newick  (Phylogenetic tree of studying plant species)
+    * 1. IQ_tree_plant_2025.newick  (Phylogenetic tree of studying plant species)
 
 ***In Code folder***
 

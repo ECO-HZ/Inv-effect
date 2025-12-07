@@ -1,4 +1,4 @@
-The following files allow one to reproduce analyses in the manuscript entitled "Alien invasion effect on soil biota: the interplay between alien species and environmental variation".
+The following files allow one to reproduce analyses in the manuscript entitled "Warming-induced divergence in native rhizosphere fungi amplifies invasion-driven soil biotic homogenization".
 
 DATA & FILE OVERVIEW
 

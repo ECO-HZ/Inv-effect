@@ -3,9 +3,9 @@
 ################################################################################
 
 # loading R packages
-library(openxlsx)
-library(vegan)
-library(GUniFrac)
+library(openxlsx) # version 4.2.5.2
+library(vegan) # version 2.6-4
+library(GUniFrac) # version 1.5
 
 # Load the grouping metadata of soil samples
 Field_group <- read.xlsx("Field_data_group.xlsx", sheet = "field_group", rowNames = T, colNames = T)
@@ -127,5 +127,6 @@ Sap_perM_tab$Predictors <- c("Origin", "Temperature", "Precipitation", "Soil pH"
 Sap_perM_tab <- Sap_perM_tab[-c(12:13) ,c("Predictors", "df" ,"F", "R2", "Pr(>F)")] # Reorder
 rownames(Sap_perM_tab) <- NULL
 print(Sap_perM_tab)
+
 
 

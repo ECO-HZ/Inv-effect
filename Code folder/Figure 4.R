@@ -3,18 +3,18 @@
 ################################################################################
 
 # loading R packages
-library(openxlsx)
-library(dplyr)
-library(ggplot2)
-library(vegan)
-library(ggtext)
-library(phytools)
-library(funrar)
-library(ggpubr)
-library(patchwork)
-library(emmeans)
-library(iCAMP)
-library(NST) # need to be NST >=3.0.3
+library(openxlsx) # version 4.2.5.2
+library(dplyr) # version 1.1.1
+library(ggplot2) # version 3.5.2
+library(vegan) # version 2.6-4
+library(ggtext) # version 0.1.2
+library(phytools) # version 2.1-1
+library(funrar) # version 1.5.0
+library(ggpubr) # version 0.6.0
+library(patchwork) # version 1.3.1
+library(emmeans) # version 1.10.6
+library(iCAMP) # version 1.5.12
+library(NST) # version 3.1.10 # need to be NST >=3.0.3
 
 # Custom style
 mytheme = theme(
@@ -673,5 +673,6 @@ Figure_4g_right <- Figure_4g_right + scale_y_continuous(limits = range_y, breaks
 
 # 
 Figure_4g_left + Figure_4g_right + plot_layout(widths = c(0.25, 0.75)) -> Figure_4g; Figure_4g
+
 
 

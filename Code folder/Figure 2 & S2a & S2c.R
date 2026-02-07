@@ -3,15 +3,15 @@
 ################################################################################
 
 # loading R packages
-library(openxlsx)
-library(ggplot2)
-library(vegan)
-library(ggridges)
-library(ggh4x)
-library(ggtext)
-library(dplyr)
-library(ggplotify)
-library(aplot)
+library(openxlsx) # version 4.2.5.2
+library(ggplot2) # version 3.5.2
+library(vegan) # version 2.6-4
+library(ggridges) # version 0.5.6
+library(ggh4x) # version 0.2.8
+library(ggtext) # version 0.1.2
+library(dplyr) # version 1.1.1
+library(ggplotify) # version 0.1.2
+library(aplot) # version 0.2.2
 
 # Custom style
 mytheme = theme(
@@ -544,4 +544,5 @@ ggplot()+
   #      legend.title = element_text(size = 10, color = "black")) + 
   labs(x = "Mean pair-wise Bray–Curtis\ndissimilarities estimated in the greenhouse experiment", 
        y = "", title = c("Among co-occurring alien species"), tag = "c") -> Figure_S2c; Figure_S2c
+
 

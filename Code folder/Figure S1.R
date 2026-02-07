@@ -2,7 +2,7 @@
 ################################# Figure S1 ####################################
 ################################################################################
 
-library(openxlsx)
+library(openxlsx) # version 4.2.5.2
 
 # Soil sample grouping information in field
 Field_group <- read.xlsx("Field_data_group.xlsx", sheet = "field_group", rowNames = T, colNames = T)
@@ -35,7 +35,7 @@ sum(Green_otu_raw)
 field_ASV = data.frame(ASV = rownames(Field_otu_raw), type = "Field")
 green_ASV = data.frame(ASV = rownames(Green_otu_raw), type = "Green")
 
-library(limma)
+library(limma) # version 3.50.3
 venn_data = rbind(field_ASV,green_ASV)
 venn_data$abun = 1
 venn_data <- as.data.frame(reshape2 ::acast(venn_data, formula = ASV ~ type , value.var = "abun", fill = 0))
@@ -45,7 +45,7 @@ venn_data=venn_data[rowSums(venn_data)>0,]
 v_venn_data=vennCounts(venn_data)
 vennDiagram(v_venn_data, circle.col = c('#3A648C', '#B79C64'), lwd=4, cex=1, scale=F)
 
-# 筛选共有的ASV id
+# common ASVs id
 common_ASVs <- intersect(rownames(Field_otu_raw), rownames(Green_otu_raw))
 length(common_ASVs)
 
@@ -210,4 +210,5 @@ ggplot(diff_BC_merge_all, aes(x = Site, y = diff_BC*100, fill = Years, color = Y
         plot.tag = element_text(size = 14, face = "bold")) +
   labs(y = 'Shared taxa contributions\nto fungal community dissimilarity (%)', x = NULL, tag = "b") +
   geom_segment(aes(x = 0, xend = 0, y = 1, yend = 3), color = "black")
+
 

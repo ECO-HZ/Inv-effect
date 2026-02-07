@@ -1,6 +1,12 @@
 ################################################################################
 ##################### Table S2 & S3 greenhouse exp. part #######################
 ################################################################################
+
+# loading R packages
+library(openxlsx) # version 4.2.5.2
+library(vegan) # version 2.6-4
+library(GUniFrac) # version 1.5
+
 ## load group data
 Green_group <- read.xlsx("Greenhouse_data_group.xlsx", sheet = "sample_group", colNames = T, rowNames = T)
 Green_group$Sample_ID <- rownames(Green_group)
@@ -210,4 +216,5 @@ Sap_SR_mod_anova <- Sap_SR_mod_anova[, c(7,6,2:5)] # Reorder
 rownames(Sap_SR_mod_anova) <- NULL
 Sap_SR_mod_anova$explan_var <- round((Sap_SR_mod_anova$`Sum Sq`/sum(Sap_SR_mod_anova$`Sum Sq`))*100, 3)
 print(Sap_SR_mod_anova) 
+
 

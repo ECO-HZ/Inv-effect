@@ -3,8 +3,8 @@
 ################################################################################
 
 # Loading R packages
-library(openxlsx)
-library(vegan)
+library(openxlsx) # version 4.2.5.2
+library(vegan) # version 2.6-4
 
 ############################## (Field survey part) #############################
 # Soil sample grouping information
@@ -92,3 +92,4 @@ summary(mod_Green)
 cor.test(Green_chao_shannon$Observed, Green_chao_shannon$Estimator)
 
 # Therefore, we used the raw sequencing abundance data for all analysis.
+

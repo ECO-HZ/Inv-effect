@@ -1,9 +1,9 @@
 ################################################################################
 ################################# Figure S3 ####################################
 ################################################################################
-library(ggplot2)
-library(openxlsx)
-library(emmeans)
+library(ggplot2) # version 3.5.2
+library(openxlsx) # version 4.2.5.2
+library(emmeans) # version 1.10.6
 
 # Custom style
 mytheme = theme(
@@ -190,4 +190,5 @@ ggplot() +
 
 
 (p1/p4)|(p2/p5)|(p3/p5)
+
 

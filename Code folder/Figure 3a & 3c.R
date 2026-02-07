@@ -3,14 +3,14 @@
 ################################################################################
 
 # loading R packages
-library(openxlsx)
-library(dplyr)
-library(ggplot2)
-library(vegan)
-library(ggtext)
-library(phytools)
-library(funrar)
-library(patchwork)
+library(openxlsx) # version 4.2.5.2
+library(dplyr) # version 1.1.1
+library(ggplot2) # version 3.5.2
+library(vegan) # version 2.6-4
+library(ggtext) # version 0.1.2
+library(phytools) # version 2.1-1
+library(funrar) # version 1.5.0
+library(patchwork) # version 1.3.1
 
 # Custom style
 mytheme = theme(
@@ -464,3 +464,4 @@ ggplot(data = with_bc_data_mean_merg, aes(x = Tave, y = diff)) +
 
 # 11.26 x 5.11
 Figure_3a/Figure_3c
+

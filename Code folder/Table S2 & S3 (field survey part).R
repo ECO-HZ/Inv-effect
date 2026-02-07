@@ -3,9 +3,9 @@
 ################################################################################
 
 # loading R packages
-library(openxlsx)
-library(vegan)
-library(GUniFrac)
+library(openxlsx) # version 4.2.5.2
+library(vegan) # version 2.6-4
+library(GUniFrac) # version 1.5
 
 # Load the grouping metadata of soil samples
 Field_group <- read.xlsx("Field_data_group.xlsx", sheet = "field_group", rowNames = T, colNames = T)
@@ -220,4 +220,5 @@ Sap_SR_mod_anova$Predictors <- c("Year", "Site", "Origin", "Species", "Year × S
 Sap_SR_mod_anova <- Sap_SR_mod_anova[c(1:7,9,10,8,11), c(7,6,2:5)] # Reorder
 rownames(Sap_SR_mod_anova) <- NULL
 print(Sap_SR_mod_anova) 
+
 
